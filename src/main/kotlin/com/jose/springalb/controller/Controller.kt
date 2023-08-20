@@ -13,6 +13,7 @@ class Controller {
         return "OK"
     }
 
+
     @GetMapping("/info")
     fun info() : String {
         return "현재 시간은 "+ LocalDateTime.now() + "이고, uuid 값 : "+uuid
