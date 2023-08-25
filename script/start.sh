@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ubuntu/spring
-pid = `ps -ef | grep spring-alb | grep -v grep | awk '{print $2}'`
+pid=`ps -ef | grep spring-alb | grep -v grep | awk '{print $2}'`
 if [ $pid ]
   then
     kill $pid
